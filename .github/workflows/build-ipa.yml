@@ -39,10 +39,11 @@ jobs:
           set -euo pipefail
           APP_PATH="$RUNNER_TEMP/JailbreakHarness.xcarchive/Products/Applications/JailbreakHarness.app"
           test -d "$APP_PATH"
-          mkdir -p Payload
-          cp -R "$APP_PATH" Payload/
+          STAGE="$(mktemp -d)"
+          mkdir -p "$STAGE/Payload"
+          cp -R "$APP_PATH" "$STAGE/Payload/"
           mkdir -p build-artifacts
-          zip -r "build-artifacts/JailbreakHarness.ipa" Payload
+          (cd "$STAGE" && zip -r "$GITHUB_WORKSPACE/build-artifacts/JailbreakHarness.ipa" Payload)
           ls -lh build-artifacts/JailbreakHarness.ipa
 
       - name: Upload IPA artifact
