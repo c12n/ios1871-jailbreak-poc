@@ -22,7 +22,7 @@
 		D00000000000000000000004 /* FastfetchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastfetchView.swift; sourceTree = "<group>"; };
 		D00000000000000000000005 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		D00000000000000000000006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		555555555555555555555555 /* JailbreakHarness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JailbreakHarness.app; sourceTree = BUILT_PRODUCTS_DIR; }
+		555555555555555555555555 /* JailbreakHarness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JailbreakHarness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
